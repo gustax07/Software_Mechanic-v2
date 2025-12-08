@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.lblLogo = new System.Windows.Forms.Label();
             this.lblCadastro = new System.Windows.Forms.Label();
+            this.lblLogo = new System.Windows.Forms.Label();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.lblTituloTop = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.btnSair = new Guna.UI2.WinForms.Guna2GradientButton();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.btnCadVeiculos = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -53,31 +54,9 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(267, 641);
+            this.panelLeft.Size = new System.Drawing.Size(267, 607);
             this.panelLeft.TabIndex = 1;
             this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
-            // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(44)))));
-            this.panelTop.Controls.Add(this.btnSair);
-            this.panelTop.Controls.Add(this.lblTituloTop);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(267, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(948, 70);
-            this.panelTop.TabIndex = 2;
-            // 
-            // lblLogo
-            // 
-            this.lblLogo.AutoSize = true;
-            this.lblLogo.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogo.ForeColor = System.Drawing.Color.White;
-            this.lblLogo.Location = new System.Drawing.Point(65, 25);
-            this.lblLogo.Name = "lblLogo";
-            this.lblLogo.Size = new System.Drawing.Size(118, 32);
-            this.lblLogo.TabIndex = 2;
-            this.lblLogo.Text = "Mechanic";
             // 
             // lblCadastro
             // 
@@ -90,17 +69,47 @@
             this.lblCadastro.TabIndex = 3;
             this.lblCadastro.Text = "Cadastros";
             // 
+            // lblLogo
+            // 
+            this.lblLogo.AutoSize = true;
+            this.lblLogo.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogo.ForeColor = System.Drawing.Color.White;
+            this.lblLogo.Location = new System.Drawing.Point(65, 25);
+            this.lblLogo.Name = "lblLogo";
+            this.lblLogo.Size = new System.Drawing.Size(118, 32);
+            this.lblLogo.TabIndex = 2;
+            this.lblLogo.Text = "Mechanic";
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(29)))), ((int)(((byte)(44)))));
+            this.panelTop.Controls.Add(this.btnSair);
+            this.panelTop.Controls.Add(this.lblTituloTop);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(267, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(818, 70);
+            this.panelTop.TabIndex = 2;
+            // 
             // lblTituloTop
             // 
             this.lblTituloTop.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTituloTop.AutoSize = true;
             this.lblTituloTop.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTituloTop.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTituloTop.Location = new System.Drawing.Point(440, 22);
+            this.lblTituloTop.Location = new System.Drawing.Point(375, 22);
             this.lblTituloTop.Name = "lblTituloTop";
             this.lblTituloTop.Size = new System.Drawing.Size(80, 32);
             this.lblTituloTop.TabIndex = 0;
             this.lblTituloTop.Text = "Home";
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(267, 70);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(818, 537);
+            this.panelMain.TabIndex = 3;
             // 
             // btnSair
             // 
@@ -118,10 +127,11 @@
             this.btnSair.ForeColor = System.Drawing.Color.White;
             this.btnSair.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.btnSair.Image = global::mecanica_2._0.Properties.Resources.LogOut;
-            this.btnSair.Location = new System.Drawing.Point(892, 17);
+            this.btnSair.Location = new System.Drawing.Point(762, 17);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(36, 36);
             this.btnSair.TabIndex = 1;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // picLogo
             // 
@@ -180,13 +190,15 @@
             this.btnCadUser.Size = new System.Drawing.Size(238, 47);
             this.btnCadUser.TabIndex = 0;
             this.btnCadUser.Text = "Cadastrar Usuarios";
+            this.btnCadUser.Click += new System.EventHandler(this.btnCadUser_Click);
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(42)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1215, 641);
+            this.ClientSize = new System.Drawing.Size(1085, 607);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -213,5 +225,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnCadVeiculos;
         private System.Windows.Forms.Label lblTituloTop;
         private Guna.UI2.WinForms.Guna2GradientButton btnSair;
+        private System.Windows.Forms.Panel panelMain;
     }
 }

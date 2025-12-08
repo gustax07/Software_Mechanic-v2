@@ -17,6 +17,18 @@ namespace mecanica_2._0
             InitializeComponent();
         }
 
+        private void LoadForm(object Form)
+        {
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.TopMost = false;
+            f.Dock = DockStyle.Fill;
+            this.panelMain.Controls.Add(f);
+            this.panelMain.Tag = f;
+            panelMain.Controls.Add(f);
+            f.Show();
+        }
+
         private void picLogo_Click(object sender, EventArgs e)
         {
 
@@ -25,6 +37,16 @@ namespace mecanica_2._0
         private void panelLeft_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnCadUser_Click(object sender, EventArgs e)
+        {
+            LoadForm(new Forms.CadastrarUsuarios());
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
