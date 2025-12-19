@@ -41,7 +41,7 @@ namespace mecanica_2._0
 
         private void btnCadUser_Click(object sender, EventArgs e)
         {
-            LoadForm(new Forms.CadastrarUsuarios());
+            LoadForm(new Forms.GerenciarUsuarios());
         }
 
         private void btnSair_Click(object sender, EventArgs e)

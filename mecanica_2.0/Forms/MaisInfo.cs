@@ -18,6 +18,7 @@ namespace mecanica_2._0.Forms
         Usuarios usuario = new Usuarios();
         Contrato contrato = new Contrato();
         Telefones Telefones = new Telefones();
+        Endereco endereco = new Endereco();
         public MaisInfo(int id_usuario)
         {
             InitializeComponent();
@@ -70,6 +71,18 @@ namespace mecanica_2._0.Forms
             {
                 lblTelefonesTxt.Visible = true;
                 
+            }
+            endereco.Id_usuario_fk = id;
+            DataTable resultadoEndereco = endereco.ListarPorID();
+            if (resultadoEndereco.Rows.Count > 0)
+            {
+                txtLogradouro.Text = resultadoEndereco.Rows[0][1].ToString();
+                txtNumero.Text = resultadoEndereco.Rows[0][2].ToString();
+                txtBairro.Text = resultadoEndereco.Rows[0][3].ToString();
+                txtCidade.Text = resultadoEndereco.Rows[0][4].ToString();
+                txtEstado.Text = resultadoEndereco.Rows[0][5].ToString();
+                txtCEP.Text = resultadoEndereco.Rows[0][6].ToString();
+                txtComplemento.Text = resultadoEndereco.Rows[0][7].ToString();
             }
         }
         private void CriarTelefoneTextBox(string numero, int id)

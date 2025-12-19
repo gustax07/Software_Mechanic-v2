@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblDataContrato = new System.Windows.Forms.Label();
             this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFechar = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -40,34 +41,35 @@
             this.lblTelefonesTxt = new System.Windows.Forms.Label();
             this.lblEnderecos = new System.Windows.Forms.Label();
             this.SeparatorEnderecos = new Guna.UI2.WinForms.Guna2Separator();
-            this.txtDataContratado = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCep = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCep = new System.Windows.Forms.Label();
-            this.txtBairro = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
-            this.txtRua = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblRua = new System.Windows.Forms.Label();
-            this.txtEstado = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.txtCidade = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCidade = new System.Windows.Forms.Label();
-            this.txtNumero = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNumero = new System.Windows.Forms.Label();
-            this.txtComplemento = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblComplemento = new System.Windows.Forms.Label();
-            this.txtContratoExpiracao = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblContratoExpirado = new System.Windows.Forms.Label();
-            this.txtSalario = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
-            this.txtCargaHoraria = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCargaHoraria = new System.Windows.Forms.Label();
-            this.txtTipo = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.txtSetor = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblSetor = new System.Windows.Forms.Label();
             this.panelContrato = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtTipo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDataContratado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtContratoExpiracao = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCargaHoraria = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSalario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtStatus = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSetor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBairro = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEstado = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtComplemento = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNumero = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCidade = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtLogradouro = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCEP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.panelTop.SuspendLayout();
             this.panelTelefones.SuspendLayout();
             this.paneltxtTelefones.SuspendLayout();
@@ -209,58 +211,6 @@
             this.SeparatorEnderecos.Size = new System.Drawing.Size(613, 10);
             this.SeparatorEnderecos.TabIndex = 1;
             // 
-            // txtDataContratado
-            // 
-            this.txtDataContratado.BackColor = System.Drawing.Color.Transparent;
-            this.txtDataContratado.BorderRadius = 10;
-            this.txtDataContratado.BorderThickness = 0;
-            this.txtDataContratado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDataContratado.DefaultText = "";
-            this.txtDataContratado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDataContratado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtDataContratado.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtDataContratado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDataContratado.Enabled = false;
-            this.txtDataContratado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtDataContratado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDataContratado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDataContratado.ForeColor = System.Drawing.Color.Black;
-            this.txtDataContratado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDataContratado.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtDataContratado.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtDataContratado.Location = new System.Drawing.Point(12, 37);
-            this.txtDataContratado.Name = "txtDataContratado";
-            this.txtDataContratado.PlaceholderText = "";
-            this.txtDataContratado.SelectedText = "";
-            this.txtDataContratado.Size = new System.Drawing.Size(223, 26);
-            this.txtDataContratado.TabIndex = 0;
-            // 
-            // txtCep
-            // 
-            this.txtCep.BackColor = System.Drawing.Color.Transparent;
-            this.txtCep.BorderRadius = 10;
-            this.txtCep.BorderThickness = 0;
-            this.txtCep.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCep.DefaultText = "";
-            this.txtCep.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCep.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtCep.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtCep.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCep.Enabled = false;
-            this.txtCep.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtCep.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCep.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCep.ForeColor = System.Drawing.Color.Black;
-            this.txtCep.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCep.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtCep.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtCep.Location = new System.Drawing.Point(26, 535);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.PlaceholderText = "";
-            this.txtCep.SelectedText = "";
-            this.txtCep.Size = new System.Drawing.Size(223, 26);
-            this.txtCep.TabIndex = 0;
-            // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
@@ -271,32 +221,6 @@
             this.lblCep.Size = new System.Drawing.Size(33, 19);
             this.lblCep.TabIndex = 1;
             this.lblCep.Text = "CEP";
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.BackColor = System.Drawing.Color.Transparent;
-            this.txtBairro.BorderRadius = 10;
-            this.txtBairro.BorderThickness = 0;
-            this.txtBairro.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBairro.DefaultText = "";
-            this.txtBairro.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBairro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtBairro.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtBairro.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBairro.Enabled = false;
-            this.txtBairro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtBairro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBairro.ForeColor = System.Drawing.Color.Black;
-            this.txtBairro.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBairro.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtBairro.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtBairro.Location = new System.Drawing.Point(416, 535);
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.PlaceholderText = "";
-            this.txtBairro.SelectedText = "";
-            this.txtBairro.Size = new System.Drawing.Size(223, 26);
-            this.txtBairro.TabIndex = 0;
             // 
             // lblBairro
             // 
@@ -309,32 +233,6 @@
             this.lblBairro.TabIndex = 1;
             this.lblBairro.Text = "Bairro";
             // 
-            // txtRua
-            // 
-            this.txtRua.BackColor = System.Drawing.Color.Transparent;
-            this.txtRua.BorderRadius = 10;
-            this.txtRua.BorderThickness = 0;
-            this.txtRua.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRua.DefaultText = "";
-            this.txtRua.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtRua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtRua.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtRua.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRua.Enabled = false;
-            this.txtRua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtRua.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRua.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtRua.ForeColor = System.Drawing.Color.Black;
-            this.txtRua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRua.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtRua.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtRua.Location = new System.Drawing.Point(26, 596);
-            this.txtRua.Name = "txtRua";
-            this.txtRua.PlaceholderText = "";
-            this.txtRua.SelectedText = "";
-            this.txtRua.Size = new System.Drawing.Size(223, 26);
-            this.txtRua.TabIndex = 0;
-            // 
             // lblRua
             // 
             this.lblRua.AutoSize = true;
@@ -345,32 +243,6 @@
             this.lblRua.Size = new System.Drawing.Size(33, 19);
             this.lblRua.TabIndex = 1;
             this.lblRua.Text = "Rua";
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.BackColor = System.Drawing.Color.Transparent;
-            this.txtEstado.BorderRadius = 10;
-            this.txtEstado.BorderThickness = 0;
-            this.txtEstado.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEstado.DefaultText = "";
-            this.txtEstado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEstado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtEstado.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtEstado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEstado.Enabled = false;
-            this.txtEstado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtEstado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEstado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEstado.ForeColor = System.Drawing.Color.Black;
-            this.txtEstado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEstado.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtEstado.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtEstado.Location = new System.Drawing.Point(416, 596);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.PlaceholderText = "";
-            this.txtEstado.SelectedText = "";
-            this.txtEstado.Size = new System.Drawing.Size(223, 26);
-            this.txtEstado.TabIndex = 0;
             // 
             // lblEstado
             // 
@@ -383,32 +255,6 @@
             this.lblEstado.TabIndex = 1;
             this.lblEstado.Text = "Estado";
             // 
-            // txtCidade
-            // 
-            this.txtCidade.BackColor = System.Drawing.Color.Transparent;
-            this.txtCidade.BorderRadius = 10;
-            this.txtCidade.BorderThickness = 0;
-            this.txtCidade.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCidade.DefaultText = "";
-            this.txtCidade.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCidade.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtCidade.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtCidade.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCidade.Enabled = false;
-            this.txtCidade.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtCidade.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCidade.ForeColor = System.Drawing.Color.Black;
-            this.txtCidade.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCidade.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtCidade.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtCidade.Location = new System.Drawing.Point(26, 652);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.PlaceholderText = "";
-            this.txtCidade.SelectedText = "";
-            this.txtCidade.Size = new System.Drawing.Size(223, 26);
-            this.txtCidade.TabIndex = 0;
-            // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
@@ -419,33 +265,6 @@
             this.lblCidade.Size = new System.Drawing.Size(52, 19);
             this.lblCidade.TabIndex = 1;
             this.lblCidade.Text = "Cidade";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.Animated = true;
-            this.txtNumero.BackColor = System.Drawing.Color.Transparent;
-            this.txtNumero.BorderRadius = 10;
-            this.txtNumero.BorderThickness = 0;
-            this.txtNumero.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNumero.DefaultText = "";
-            this.txtNumero.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNumero.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtNumero.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtNumero.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNumero.Enabled = false;
-            this.txtNumero.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtNumero.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumero.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtNumero.ForeColor = System.Drawing.Color.Black;
-            this.txtNumero.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumero.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtNumero.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtNumero.Location = new System.Drawing.Point(416, 652);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.PlaceholderText = "";
-            this.txtNumero.SelectedText = "";
-            this.txtNumero.Size = new System.Drawing.Size(223, 26);
-            this.txtNumero.TabIndex = 0;
             // 
             // lblNumero
             // 
@@ -458,33 +277,6 @@
             this.lblNumero.TabIndex = 1;
             this.lblNumero.Text = "Numero";
             // 
-            // txtComplemento
-            // 
-            this.txtComplemento.Animated = true;
-            this.txtComplemento.BackColor = System.Drawing.Color.Transparent;
-            this.txtComplemento.BorderRadius = 10;
-            this.txtComplemento.BorderThickness = 0;
-            this.txtComplemento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtComplemento.DefaultText = "";
-            this.txtComplemento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtComplemento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtComplemento.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtComplemento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtComplemento.Enabled = false;
-            this.txtComplemento.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtComplemento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtComplemento.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtComplemento.ForeColor = System.Drawing.Color.Black;
-            this.txtComplemento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtComplemento.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtComplemento.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtComplemento.Location = new System.Drawing.Point(26, 710);
-            this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.PlaceholderText = "";
-            this.txtComplemento.SelectedText = "";
-            this.txtComplemento.Size = new System.Drawing.Size(223, 26);
-            this.txtComplemento.TabIndex = 0;
-            // 
             // lblComplemento
             // 
             this.lblComplemento.AutoSize = true;
@@ -495,32 +287,6 @@
             this.lblComplemento.Size = new System.Drawing.Size(97, 19);
             this.lblComplemento.TabIndex = 1;
             this.lblComplemento.Text = "Complemento";
-            // 
-            // txtContratoExpiracao
-            // 
-            this.txtContratoExpiracao.BackColor = System.Drawing.Color.Transparent;
-            this.txtContratoExpiracao.BorderRadius = 10;
-            this.txtContratoExpiracao.BorderThickness = 0;
-            this.txtContratoExpiracao.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContratoExpiracao.DefaultText = "";
-            this.txtContratoExpiracao.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtContratoExpiracao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtContratoExpiracao.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtContratoExpiracao.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtContratoExpiracao.Enabled = false;
-            this.txtContratoExpiracao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtContratoExpiracao.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContratoExpiracao.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtContratoExpiracao.ForeColor = System.Drawing.Color.Black;
-            this.txtContratoExpiracao.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContratoExpiracao.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtContratoExpiracao.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtContratoExpiracao.Location = new System.Drawing.Point(12, 93);
-            this.txtContratoExpiracao.Name = "txtContratoExpiracao";
-            this.txtContratoExpiracao.PlaceholderText = "";
-            this.txtContratoExpiracao.SelectedText = "";
-            this.txtContratoExpiracao.Size = new System.Drawing.Size(223, 26);
-            this.txtContratoExpiracao.TabIndex = 0;
             // 
             // lblContratoExpirado
             // 
@@ -533,32 +299,6 @@
             this.lblContratoExpirado.TabIndex = 1;
             this.lblContratoExpirado.Text = "Data de Expiração";
             // 
-            // txtSalario
-            // 
-            this.txtSalario.BackColor = System.Drawing.Color.Transparent;
-            this.txtSalario.BorderRadius = 10;
-            this.txtSalario.BorderThickness = 0;
-            this.txtSalario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSalario.DefaultText = "";
-            this.txtSalario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSalario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtSalario.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtSalario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSalario.Enabled = false;
-            this.txtSalario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtSalario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSalario.ForeColor = System.Drawing.Color.Black;
-            this.txtSalario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSalario.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtSalario.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtSalario.Location = new System.Drawing.Point(414, 93);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.PlaceholderText = "";
-            this.txtSalario.SelectedText = "";
-            this.txtSalario.Size = new System.Drawing.Size(223, 26);
-            this.txtSalario.TabIndex = 0;
-            // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
@@ -569,32 +309,6 @@
             this.lblSalario.Size = new System.Drawing.Size(52, 19);
             this.lblSalario.TabIndex = 1;
             this.lblSalario.Text = "Salario";
-            // 
-            // txtCargaHoraria
-            // 
-            this.txtCargaHoraria.BackColor = System.Drawing.Color.Transparent;
-            this.txtCargaHoraria.BorderRadius = 10;
-            this.txtCargaHoraria.BorderThickness = 0;
-            this.txtCargaHoraria.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCargaHoraria.DefaultText = "";
-            this.txtCargaHoraria.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCargaHoraria.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtCargaHoraria.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtCargaHoraria.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCargaHoraria.Enabled = false;
-            this.txtCargaHoraria.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtCargaHoraria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCargaHoraria.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCargaHoraria.ForeColor = System.Drawing.Color.Black;
-            this.txtCargaHoraria.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCargaHoraria.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtCargaHoraria.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtCargaHoraria.Location = new System.Drawing.Point(416, 37);
-            this.txtCargaHoraria.Name = "txtCargaHoraria";
-            this.txtCargaHoraria.PlaceholderText = "";
-            this.txtCargaHoraria.SelectedText = "";
-            this.txtCargaHoraria.Size = new System.Drawing.Size(223, 26);
-            this.txtCargaHoraria.TabIndex = 0;
             // 
             // lblCargaHoraria
             // 
@@ -607,32 +321,6 @@
             this.lblCargaHoraria.TabIndex = 1;
             this.lblCargaHoraria.Text = "Carga Horária";
             // 
-            // txtTipo
-            // 
-            this.txtTipo.BackColor = System.Drawing.Color.Transparent;
-            this.txtTipo.BorderRadius = 10;
-            this.txtTipo.BorderThickness = 0;
-            this.txtTipo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTipo.DefaultText = "";
-            this.txtTipo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTipo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtTipo.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtTipo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTipo.Enabled = false;
-            this.txtTipo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtTipo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTipo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTipo.ForeColor = System.Drawing.Color.Black;
-            this.txtTipo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTipo.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtTipo.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtTipo.Location = new System.Drawing.Point(12, 144);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.PlaceholderText = "";
-            this.txtTipo.SelectedText = "";
-            this.txtTipo.Size = new System.Drawing.Size(223, 26);
-            this.txtTipo.TabIndex = 0;
-            // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
@@ -644,32 +332,6 @@
             this.lblTipo.TabIndex = 1;
             this.lblTipo.Text = "Tipo";
             // 
-            // txtStatus
-            // 
-            this.txtStatus.BackColor = System.Drawing.Color.Transparent;
-            this.txtStatus.BorderRadius = 10;
-            this.txtStatus.BorderThickness = 0;
-            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtStatus.DefaultText = "";
-            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStatus.Enabled = false;
-            this.txtStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtStatus.ForeColor = System.Drawing.Color.Black;
-            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStatus.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtStatus.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtStatus.Location = new System.Drawing.Point(414, 144);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.PlaceholderText = "";
-            this.txtStatus.SelectedText = "";
-            this.txtStatus.Size = new System.Drawing.Size(223, 26);
-            this.txtStatus.TabIndex = 0;
-            // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
@@ -680,32 +342,6 @@
             this.lblStatus.Size = new System.Drawing.Size(48, 19);
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "Status";
-            // 
-            // txtSetor
-            // 
-            this.txtSetor.BackColor = System.Drawing.Color.Transparent;
-            this.txtSetor.BorderRadius = 10;
-            this.txtSetor.BorderThickness = 0;
-            this.txtSetor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSetor.DefaultText = "";
-            this.txtSetor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSetor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtSetor.DisabledState.ForeColor = System.Drawing.Color.White;
-            this.txtSetor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSetor.Enabled = false;
-            this.txtSetor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.txtSetor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSetor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSetor.ForeColor = System.Drawing.Color.Black;
-            this.txtSetor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSetor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
-            this.txtSetor.IconLeft = global::mecanica_2._0.Properties.Resources.CadUser;
-            this.txtSetor.Location = new System.Drawing.Point(12, 195);
-            this.txtSetor.Name = "txtSetor";
-            this.txtSetor.PlaceholderText = "";
-            this.txtSetor.SelectedText = "";
-            this.txtSetor.Size = new System.Drawing.Size(223, 26);
-            this.txtSetor.TabIndex = 0;
             // 
             // lblSetor
             // 
@@ -740,6 +376,376 @@
             this.panelContrato.Size = new System.Drawing.Size(650, 244);
             this.panelContrato.TabIndex = 4;
             // 
+            // txtTipo
+            // 
+            this.txtTipo.BackColor = System.Drawing.Color.Transparent;
+            this.txtTipo.BorderRadius = 10;
+            this.txtTipo.BorderThickness = 0;
+            this.txtTipo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTipo.DefaultText = "";
+            this.txtTipo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTipo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtTipo.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtTipo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTipo.Enabled = false;
+            this.txtTipo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtTipo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTipo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTipo.ForeColor = System.Drawing.Color.Black;
+            this.txtTipo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTipo.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtTipo.IconLeft = global::mecanica_2._0.Properties.Resources.contrato;
+            this.txtTipo.Location = new System.Drawing.Point(12, 144);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.PlaceholderText = "";
+            this.txtTipo.SelectedText = "";
+            this.txtTipo.Size = new System.Drawing.Size(223, 26);
+            this.txtTipo.TabIndex = 0;
+            // 
+            // txtDataContratado
+            // 
+            this.txtDataContratado.BackColor = System.Drawing.Color.Transparent;
+            this.txtDataContratado.BorderRadius = 10;
+            this.txtDataContratado.BorderThickness = 0;
+            this.txtDataContratado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDataContratado.DefaultText = "";
+            this.txtDataContratado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDataContratado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtDataContratado.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtDataContratado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDataContratado.Enabled = false;
+            this.txtDataContratado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtDataContratado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDataContratado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDataContratado.ForeColor = System.Drawing.Color.Black;
+            this.txtDataContratado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDataContratado.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtDataContratado.IconLeft = global::mecanica_2._0.Properties.Resources.calendar;
+            this.txtDataContratado.Location = new System.Drawing.Point(12, 37);
+            this.txtDataContratado.Name = "txtDataContratado";
+            this.txtDataContratado.PlaceholderText = "";
+            this.txtDataContratado.SelectedText = "";
+            this.txtDataContratado.Size = new System.Drawing.Size(223, 26);
+            this.txtDataContratado.TabIndex = 0;
+            // 
+            // txtContratoExpiracao
+            // 
+            this.txtContratoExpiracao.BackColor = System.Drawing.Color.Transparent;
+            this.txtContratoExpiracao.BorderRadius = 10;
+            this.txtContratoExpiracao.BorderThickness = 0;
+            this.txtContratoExpiracao.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContratoExpiracao.DefaultText = "";
+            this.txtContratoExpiracao.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContratoExpiracao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtContratoExpiracao.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtContratoExpiracao.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContratoExpiracao.Enabled = false;
+            this.txtContratoExpiracao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtContratoExpiracao.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContratoExpiracao.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContratoExpiracao.ForeColor = System.Drawing.Color.Black;
+            this.txtContratoExpiracao.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContratoExpiracao.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtContratoExpiracao.IconLeft = global::mecanica_2._0.Properties.Resources.calendar;
+            this.txtContratoExpiracao.Location = new System.Drawing.Point(12, 93);
+            this.txtContratoExpiracao.Name = "txtContratoExpiracao";
+            this.txtContratoExpiracao.PlaceholderText = "";
+            this.txtContratoExpiracao.SelectedText = "";
+            this.txtContratoExpiracao.Size = new System.Drawing.Size(223, 26);
+            this.txtContratoExpiracao.TabIndex = 0;
+            // 
+            // txtCargaHoraria
+            // 
+            this.txtCargaHoraria.BackColor = System.Drawing.Color.Transparent;
+            this.txtCargaHoraria.BorderRadius = 10;
+            this.txtCargaHoraria.BorderThickness = 0;
+            this.txtCargaHoraria.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCargaHoraria.DefaultText = "";
+            this.txtCargaHoraria.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCargaHoraria.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtCargaHoraria.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtCargaHoraria.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCargaHoraria.Enabled = false;
+            this.txtCargaHoraria.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtCargaHoraria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCargaHoraria.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCargaHoraria.ForeColor = System.Drawing.Color.Black;
+            this.txtCargaHoraria.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCargaHoraria.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtCargaHoraria.IconLeft = global::mecanica_2._0.Properties.Resources.relogio;
+            this.txtCargaHoraria.Location = new System.Drawing.Point(416, 37);
+            this.txtCargaHoraria.Name = "txtCargaHoraria";
+            this.txtCargaHoraria.PlaceholderText = "";
+            this.txtCargaHoraria.SelectedText = "";
+            this.txtCargaHoraria.Size = new System.Drawing.Size(223, 26);
+            this.txtCargaHoraria.TabIndex = 0;
+            // 
+            // txtSalario
+            // 
+            this.txtSalario.BackColor = System.Drawing.Color.Transparent;
+            this.txtSalario.BorderRadius = 10;
+            this.txtSalario.BorderThickness = 0;
+            this.txtSalario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSalario.DefaultText = "";
+            this.txtSalario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSalario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtSalario.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtSalario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSalario.Enabled = false;
+            this.txtSalario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtSalario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSalario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSalario.ForeColor = System.Drawing.Color.Black;
+            this.txtSalario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSalario.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtSalario.IconLeft = global::mecanica_2._0.Properties.Resources.money_bag;
+            this.txtSalario.Location = new System.Drawing.Point(414, 93);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.PlaceholderText = "";
+            this.txtSalario.SelectedText = "";
+            this.txtSalario.Size = new System.Drawing.Size(223, 26);
+            this.txtSalario.TabIndex = 0;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.BackColor = System.Drawing.Color.Transparent;
+            this.txtStatus.BorderRadius = 10;
+            this.txtStatus.BorderThickness = 0;
+            this.txtStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStatus.DefaultText = "";
+            this.txtStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtStatus.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStatus.Enabled = false;
+            this.txtStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStatus.ForeColor = System.Drawing.Color.Black;
+            this.txtStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStatus.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtStatus.IconLeft = global::mecanica_2._0.Properties.Resources.status;
+            this.txtStatus.Location = new System.Drawing.Point(414, 144);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.PlaceholderText = "";
+            this.txtStatus.SelectedText = "";
+            this.txtStatus.Size = new System.Drawing.Size(223, 26);
+            this.txtStatus.TabIndex = 0;
+            // 
+            // txtSetor
+            // 
+            this.txtSetor.BackColor = System.Drawing.Color.Transparent;
+            this.txtSetor.BorderRadius = 10;
+            this.txtSetor.BorderThickness = 0;
+            this.txtSetor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSetor.DefaultText = "";
+            this.txtSetor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSetor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtSetor.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtSetor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSetor.Enabled = false;
+            this.txtSetor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtSetor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSetor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSetor.ForeColor = System.Drawing.Color.Black;
+            this.txtSetor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSetor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtSetor.IconLeft = global::mecanica_2._0.Properties.Resources.setor;
+            this.txtSetor.Location = new System.Drawing.Point(12, 195);
+            this.txtSetor.Name = "txtSetor";
+            this.txtSetor.PlaceholderText = "";
+            this.txtSetor.SelectedText = "";
+            this.txtSetor.Size = new System.Drawing.Size(223, 26);
+            this.txtSetor.TabIndex = 0;
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.BackColor = System.Drawing.Color.Transparent;
+            this.txtBairro.BorderRadius = 10;
+            this.txtBairro.BorderThickness = 0;
+            this.txtBairro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBairro.DefaultText = "";
+            this.txtBairro.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBairro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtBairro.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtBairro.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBairro.Enabled = false;
+            this.txtBairro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtBairro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBairro.ForeColor = System.Drawing.Color.Black;
+            this.txtBairro.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBairro.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtBairro.IconLeft = global::mecanica_2._0.Properties.Resources.bairro1;
+            this.txtBairro.Location = new System.Drawing.Point(416, 535);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.PlaceholderText = "";
+            this.txtBairro.SelectedText = "";
+            this.txtBairro.Size = new System.Drawing.Size(223, 26);
+            this.txtBairro.TabIndex = 0;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.BackColor = System.Drawing.Color.Transparent;
+            this.txtEstado.BorderRadius = 10;
+            this.txtEstado.BorderThickness = 0;
+            this.txtEstado.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEstado.DefaultText = "";
+            this.txtEstado.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEstado.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtEstado.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtEstado.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEstado.Enabled = false;
+            this.txtEstado.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtEstado.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEstado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEstado.ForeColor = System.Drawing.Color.Black;
+            this.txtEstado.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEstado.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtEstado.IconLeft = global::mecanica_2._0.Properties.Resources.estado;
+            this.txtEstado.Location = new System.Drawing.Point(416, 596);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.PlaceholderText = "";
+            this.txtEstado.SelectedText = "";
+            this.txtEstado.Size = new System.Drawing.Size(223, 26);
+            this.txtEstado.TabIndex = 0;
+            // 
+            // txtComplemento
+            // 
+            this.txtComplemento.Animated = true;
+            this.txtComplemento.BackColor = System.Drawing.Color.Transparent;
+            this.txtComplemento.BorderRadius = 10;
+            this.txtComplemento.BorderThickness = 0;
+            this.txtComplemento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtComplemento.DefaultText = "";
+            this.txtComplemento.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtComplemento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtComplemento.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtComplemento.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtComplemento.Enabled = false;
+            this.txtComplemento.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtComplemento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtComplemento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtComplemento.ForeColor = System.Drawing.Color.Black;
+            this.txtComplemento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtComplemento.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtComplemento.IconLeft = global::mecanica_2._0.Properties.Resources.descricao;
+            this.txtComplemento.Location = new System.Drawing.Point(26, 710);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.PlaceholderText = "";
+            this.txtComplemento.SelectedText = "";
+            this.txtComplemento.Size = new System.Drawing.Size(223, 26);
+            this.txtComplemento.TabIndex = 0;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Animated = true;
+            this.txtNumero.BackColor = System.Drawing.Color.Transparent;
+            this.txtNumero.BorderRadius = 10;
+            this.txtNumero.BorderThickness = 0;
+            this.txtNumero.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNumero.DefaultText = "";
+            this.txtNumero.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNumero.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtNumero.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtNumero.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNumero.Enabled = false;
+            this.txtNumero.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtNumero.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumero.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNumero.ForeColor = System.Drawing.Color.Black;
+            this.txtNumero.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumero.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtNumero.IconLeft = global::mecanica_2._0.Properties.Resources.numerico;
+            this.txtNumero.Location = new System.Drawing.Point(416, 652);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.PlaceholderText = "";
+            this.txtNumero.SelectedText = "";
+            this.txtNumero.Size = new System.Drawing.Size(223, 26);
+            this.txtNumero.TabIndex = 0;
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.BackColor = System.Drawing.Color.Transparent;
+            this.txtCidade.BorderRadius = 10;
+            this.txtCidade.BorderThickness = 0;
+            this.txtCidade.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCidade.DefaultText = "";
+            this.txtCidade.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCidade.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtCidade.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtCidade.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCidade.Enabled = false;
+            this.txtCidade.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtCidade.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCidade.ForeColor = System.Drawing.Color.Black;
+            this.txtCidade.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCidade.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtCidade.IconLeft = global::mecanica_2._0.Properties.Resources.cidade;
+            this.txtCidade.Location = new System.Drawing.Point(26, 652);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.PlaceholderText = "";
+            this.txtCidade.SelectedText = "";
+            this.txtCidade.Size = new System.Drawing.Size(223, 26);
+            this.txtCidade.TabIndex = 0;
+            // 
+            // txtLogradouro
+            // 
+            this.txtLogradouro.BackColor = System.Drawing.Color.Transparent;
+            this.txtLogradouro.BorderRadius = 10;
+            this.txtLogradouro.BorderThickness = 0;
+            this.txtLogradouro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLogradouro.DefaultText = "";
+            this.txtLogradouro.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLogradouro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtLogradouro.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtLogradouro.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLogradouro.Enabled = false;
+            this.txtLogradouro.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtLogradouro.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLogradouro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLogradouro.ForeColor = System.Drawing.Color.Black;
+            this.txtLogradouro.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLogradouro.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtLogradouro.IconLeft = global::mecanica_2._0.Properties.Resources.estrada;
+            this.txtLogradouro.Location = new System.Drawing.Point(26, 596);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.PlaceholderText = "";
+            this.txtLogradouro.SelectedText = "";
+            this.txtLogradouro.Size = new System.Drawing.Size(223, 26);
+            this.txtLogradouro.TabIndex = 0;
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.BackColor = System.Drawing.Color.Transparent;
+            this.txtCEP.BorderRadius = 10;
+            this.txtCEP.BorderThickness = 0;
+            this.txtCEP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCEP.DefaultText = "";
+            this.txtCEP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCEP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtCEP.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.txtCEP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCEP.Enabled = false;
+            this.txtCEP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.txtCEP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCEP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCEP.ForeColor = System.Drawing.Color.Black;
+            this.txtCEP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCEP.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(86)))), ((int)(((byte)(117)))));
+            this.txtCEP.IconLeft = global::mecanica_2._0.Properties.Resources.cep;
+            this.txtCEP.Location = new System.Drawing.Point(26, 535);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.PlaceholderText = "";
+            this.txtCEP.SelectedText = "";
+            this.txtCEP.Size = new System.Drawing.Size(223, 26);
+            this.txtCEP.TabIndex = 0;
+            // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.TargetForm = this;
+            // 
             // MaisInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -763,8 +769,8 @@
             this.Controls.Add(this.txtComplemento);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtCidade);
-            this.Controls.Add(this.txtRua);
-            this.Controls.Add(this.txtCep);
+            this.Controls.Add(this.txtLogradouro);
+            this.Controls.Add(this.txtCEP);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MaisInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -794,11 +800,11 @@
         private System.Windows.Forms.Label lblEnderecos;
         private Guna.UI2.WinForms.Guna2Separator SeparatorEnderecos;
         private Guna.UI2.WinForms.Guna2GradientButton btnFechar;
-        private Guna.UI2.WinForms.Guna2TextBox txtCep;
+        private Guna.UI2.WinForms.Guna2TextBox txtCEP;
         private System.Windows.Forms.Label lblCep;
         private Guna.UI2.WinForms.Guna2TextBox txtBairro;
         private System.Windows.Forms.Label lblBairro;
-        private Guna.UI2.WinForms.Guna2TextBox txtRua;
+        private Guna.UI2.WinForms.Guna2TextBox txtLogradouro;
         private System.Windows.Forms.Label lblRua;
         private Guna.UI2.WinForms.Guna2TextBox txtEstado;
         private System.Windows.Forms.Label lblEstado;
@@ -823,5 +829,6 @@
         private Guna.UI2.WinForms.Guna2Panel panelContrato;
         private System.Windows.Forms.Panel paneltxtTelefones;
         private System.Windows.Forms.Label lblTelefonesTxt;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }
