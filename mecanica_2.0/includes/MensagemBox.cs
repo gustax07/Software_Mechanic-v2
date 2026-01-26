@@ -10,7 +10,6 @@ namespace mecanica_2._0.includes
         public MensagemBox()
         {
             InitializeComponent();
-            animForm.AnimationType = Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
         }
         bool btnok, btnsim, btncancelar, btnnao = false;
         public enum Icons
@@ -41,10 +40,10 @@ namespace mecanica_2._0.includes
                     picIcon.Image = Properties.Resources.fechar;
                     break;
                 case Icons.Warning:
-                    picIcon.Image = Properties.Resources.cep;
+                    picIcon.Image = Properties.Resources.aviso;
                     break;
                 case Icons.Error:
-                    picIcon.Image = Properties.Resources.bairro1;
+                    picIcon.Image = Properties.Resources.erro;
                     break;
                 default:
                     picIcon.Visible = false;

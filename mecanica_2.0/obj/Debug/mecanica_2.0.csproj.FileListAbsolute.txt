@@ -52,6 +52,11 @@ D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.MaisInfo.resources
 D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.EditarUsuarios.resources
 D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.CadastrarUsuario.resources
 D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.GerenciarUsuarios.resources
-D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Login1.resources
-D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.includes.UserControl1.resources
 D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.includes.MensagemBox.resources
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Login.resources
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.includes.background.resources
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.CadastrarTelefone.resources
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2.0.exe.config
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.CadastrarEnderecos.resources
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.includes.FormModal.resources
+D:\mecanica_2.0\mecanica_2.0\obj\Debug\mecanica_2._0.Forms.VerContratos.resources

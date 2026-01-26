@@ -32,17 +32,17 @@ namespace mecanica_2._0.Forms
             this.Close();
         }
 
-        private void UsuarioCampos(int id)
+        private async void UsuarioCampos(int id)
         {
             usuario.Id = id;
 
-            DataTable resultado = usuario.ListarPorID();
+            DataTable resultado = await usuario.ListarPorID();
             if (resultado.Rows.Count > 0)
             {
                 lblInformacoesDetalhadas.Text = "Informações de " + resultado.Rows[0][1].ToString();
 
-                contrato.Id = (int)resultado.Rows[0][7];
-                DataTable resultadoContrato = contrato.ListarComInnerJoin();
+               // contrato.Id = (int)resultado.Rows[0][7];
+                DataTable resultadoContrato = await contrato.ListarComInnerJoin();
                 if (resultadoContrato.Rows.Count > 0)
                 {
                     txtDataContratado.Text = Convert.ToDateTime(resultadoContrato.Rows[0][1]).ToString("dd/MM/yyyy HH:mm");
@@ -59,7 +59,7 @@ namespace mecanica_2._0.Forms
                 MessageBox.Show("Usuário não encontrado.");
             }
             Telefones.Id_usuario_fk = id;
-            DataTable resultadoTelefone = Telefones.ListarPorID();
+            DataTable resultadoTelefone = await Telefones.ListarPorID();
             if (resultadoTelefone.Rows.Count > 0)
             {
                 for (int i = 0; i < resultadoTelefone.Rows.Count; i++)
@@ -73,7 +73,7 @@ namespace mecanica_2._0.Forms
                 
             }
             endereco.Id_usuario_fk = id;
-            DataTable resultadoEndereco = endereco.ListarPorID();
+            DataTable resultadoEndereco = await endereco.ListarPorID();
             if (resultadoEndereco.Rows.Count > 0)
             {
                 txtLogradouro.Text = resultadoEndereco.Rows[0][1].ToString();

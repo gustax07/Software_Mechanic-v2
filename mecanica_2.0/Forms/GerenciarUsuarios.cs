@@ -13,114 +13,41 @@ using System.Windows.Forms;
 
 namespace mecanica_2._0.Forms
 {
-    
+
     public partial class GerenciarUsuarios : Form
     {
         Usuarios usuario = new Usuarios();
+        CadastrarUsuario cadastrar = new CadastrarUsuario();
         public GerenciarUsuarios()
         {
 
             InitializeComponent();
-            var col = new DataGridViewCheckBoxColumn();
-            col.Name = "Coluna";
-            col.HeaderText = "#";
-            col.FalseValue = "0";
-            col.TrueValue = "1";
-
-            //Make the default checked
-            col.CellTemplate.Value = false;
-            //col.CellTemplate.Style.NullValue = true;
-
-            dtgUsuarios.Columns.Insert(0, col);
-
-
-            dtgUsuarios.DataSource = usuario.ListarUsuariosDGV();
-
-         
-            toggleDGV.Checked = true;
+            alturaOriginal = dtgUsuarios.Size.Height;
+            ListarDGV();
 
         }
 
-        private void LoadForm(object Form)
+        private async void ListarDGV()
         {
-            Form f = Form as Form;
-            f.TopLevel = false;
-            f.TopMost = false;
-            f.Dock = DockStyle.Fill;
-            this.panelExibir.Controls.Add(f);
-            this.panelExibir.Tag = f;
-            panelExibir.Controls.Add(f);
-            f.Show();
+             dtgUsuarios.DataSource = await usuario.ListarUsuariosDGV();
         }
+
         private void GerenciarUsuarios_Load(object sender, EventArgs e)
         {
             btnFechar.Visible = false;
         }
         private void dtgUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnEditar.Enabled = true;
-            btnMais.Enabled = true;
-
-
-            usuario.Id = (int)dtgUsuarios.CurrentRow.Cells[1].Value;
+            usuario.Id = (int)dtgUsuarios.CurrentRow.Cells[0].Value;
         }
 
-        private void txtPessoais_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtTelefones_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void toggleDGV_CheckedChanged(object sender, EventArgs e)
-        {
-            if (!toggleDGV.Checked)
-            {
-                dtgUsuarios.Visible = false;
-            }
-            else
-            {
-                dtgUsuarios.Visible = true;
-            }
-        }
-
+        public static int parentX, parentY;
         private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-            toggleDGV.Checked = false;
-            lblUsuariosCadastrados.Text = "Cadastrar Usuário";
-            btnEditar.Visible = false;
-            btnExcluir.Visible = false;
-            btnPessoais.Checked = true;
-            btnMais.Visible = false;
-            guna2VSeparator1.Visible = false;
-            btnCadastrar.Visible = false;
-            btnFechar.Visible = true;
-            CadastrarUsuario cadastrar = new CadastrarUsuario();
-            LoadForm(new CadastrarUsuario());
+        {  
+            this.Dispose();
+            cadastrar.ShowDialog();
         }
 
-        private void btnEnderecos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnContrato_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            lblUsuariosCadastrados.Text = "Modo Edição";
-        }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnMais_Click(object sender, EventArgs e)
         {
@@ -130,13 +57,40 @@ namespace mecanica_2._0.Forms
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            btnFechar.Visible = false;
-            panelExibir.Visible = false;
-            btnCadastrar.Enabled = true;
-            btnCadastrar.Visible = true;
-            btnEditar.Visible = true;
-            btnExcluir.Visible = true;
-            toggleDGV.Checked = true;
+           
+        }
+
+        private float scale = 1.0f;
+        private int alturaOriginal = 0;
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+
+            int width = this.Size.Width;
+            int height = dtgUsuarios.Size.Height;
+
+            if (height > 0)
+            {
+                scale += 0.005f;
+                height = alturaOriginal;
+                if (scale >= 1.0f)
+                {
+                    timer1.Stop();
+                }
+            }
+            panelExibir.Size = new Size(width, (int)(height * scale));
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            ListarDGV();
+            timer1.Start();
+            panelExibir.Size = new Size(0,0);
         }
     }
 }

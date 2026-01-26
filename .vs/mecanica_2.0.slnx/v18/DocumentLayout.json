@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\mecanica_2.0\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|d:\\mecanica_2.0\\mecanica_2.0\\classes\\telefones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|solutionrelative:mecanica_2.0\\classes\\telefones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|D:\\mecanica_2.0\\mecanica_2.0\\forms\\cadastrartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|solutionrelative:mecanica_2.0\\forms\\cadastrartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|D:\\mecanica_2.0\\mecanica_2.0\\forms\\cadastrartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|solutionrelative:mecanica_2.0\\forms\\cadastrartelefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|D:\\mecanica_2.0\\mecanica_2.0\\forms\\cadastrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|solutionrelative:mecanica_2.0\\forms\\cadastrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|D:\\mecanica_2.0\\mecanica_2.0\\forms\\gerenciarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1106C88E-0959-42A5-A495-852EC63DD280}|mecanica_2.0\\mecanica_2.0.csproj|solutionrelative:mecanica_2.0\\forms\\gerenciarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -25,7 +42,65 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Telefones.cs",
+              "DocumentMoniker": "D:\\mecanica_2.0\\mecanica_2.0\\Classes\\Telefones.cs",
+              "RelativeDocumentMoniker": "mecanica_2.0\\Classes\\Telefones.cs",
+              "ToolTip": "D:\\mecanica_2.0\\mecanica_2.0\\Classes\\Telefones.cs",
+              "RelativeToolTip": "mecanica_2.0\\Classes\\Telefones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T16:55:43.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastrarTelefone.cs",
+              "DocumentMoniker": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\CadastrarTelefone.cs",
+              "RelativeDocumentMoniker": "mecanica_2.0\\Forms\\CadastrarTelefone.cs",
+              "ToolTip": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\CadastrarTelefone.cs",
+              "RelativeToolTip": "mecanica_2.0\\Forms\\CadastrarTelefone.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAywLsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:23:55.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CadastrarTelefone.cs [Design]",
+              "DocumentMoniker": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\CadastrarTelefone.cs",
+              "RelativeDocumentMoniker": "mecanica_2.0\\Forms\\CadastrarTelefone.cs",
+              "ToolTip": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\CadastrarTelefone.cs [Design]",
+              "RelativeToolTip": "mecanica_2.0\\Forms\\CadastrarTelefone.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T18:13:29.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadastrarUsuario.cs [Design]",
+              "DocumentMoniker": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\CadastrarUsuario.cs",
+              "RelativeDocumentMoniker": "mecanica_2.0\\Forms\\CadastrarUsuario.cs",
+              "ToolTip": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\CadastrarUsuario.cs [Design]",
+              "RelativeToolTip": "mecanica_2.0\\Forms\\CadastrarUsuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:32:55.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GerenciarUsuarios.cs [Design]",
+              "DocumentMoniker": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\GerenciarUsuarios.cs",
+              "RelativeDocumentMoniker": "mecanica_2.0\\Forms\\GerenciarUsuarios.cs",
+              "ToolTip": "D:\\mecanica_2.0\\mecanica_2.0\\Forms\\GerenciarUsuarios.cs [Design]",
+              "RelativeToolTip": "mecanica_2.0\\Forms\\GerenciarUsuarios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T22:53:33.244Z"
             }
           ]
         }

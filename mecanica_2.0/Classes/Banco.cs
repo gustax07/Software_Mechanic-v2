@@ -17,13 +17,13 @@ namespace mecanica_2._0.Classes
                              PWD = "";
 
         // Método para conectar ao bd. Deve ser instanciado por um objeto MySqlConnection
-        public MySqlConnection ObterConexao()
+        public async Task<MySqlConnection> ObterConexao()
         {
             MySqlConnection con = null;
             try
             {
                 con = new MySqlConnection("SERVER=" + SERVER + ";PORT=" + PORT + ";DATABASE=" + DATABASE + ";UID=" + UID + ";PWD=" + PWD + ";");
-                con.Open();
+                await con.OpenAsync();
             }
             catch (MySqlException e)
             {

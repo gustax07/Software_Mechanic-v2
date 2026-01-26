@@ -95,9 +95,9 @@
             this.lblDescricao.AutoEllipsis = true;
             this.lblDescricao.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescricao.ForeColor = System.Drawing.Color.LightGray;
-            this.lblDescricao.Location = new System.Drawing.Point(70, 286);
+            this.lblDescricao.Location = new System.Drawing.Point(70, 240);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(319, 140);
+            this.lblDescricao.Size = new System.Drawing.Size(319, 56);
             this.lblDescricao.TabIndex = 0;
             this.lblDescricao.Text = "Voce gostaria de Apagar este Usuario ?\r\n";
             this.lblDescricao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -118,7 +118,7 @@
             this.btnOk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnOk.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(224, 458);
+            this.btnOk.Location = new System.Drawing.Point(229, 299);
             this.btnOk.Name = "btnOk";
             this.btnOk.ShadowDecoration.BorderRadius = 12;
             this.btnOk.ShadowDecoration.Depth = 20;
@@ -135,15 +135,17 @@
             // 
             this.picIcon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picIcon.Location = new System.Drawing.Point(151, 105);
+            this.picIcon.Location = new System.Drawing.Point(150, 83);
             this.picIcon.Name = "picIcon";
             this.picIcon.Size = new System.Drawing.Size(158, 139);
+            this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picIcon.TabIndex = 2;
             this.picIcon.TabStop = false;
             // 
             // animForm
             // 
-            this.animForm.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
+            this.animForm.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
+            this.animForm.Interval = 100;
             this.animForm.TargetForm = this;
             // 
             // guna2DragControl1
@@ -173,7 +175,7 @@
             this.btnNao.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnNao.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNao.ForeColor = System.Drawing.Color.White;
-            this.btnNao.Location = new System.Drawing.Point(337, 458);
+            this.btnNao.Location = new System.Drawing.Point(345, 299);
             this.btnNao.Name = "btnNao";
             this.btnNao.ShadowDecoration.BorderRadius = 12;
             this.btnNao.ShadowDecoration.Depth = 20;
@@ -202,7 +204,7 @@
             this.btnSim.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnSim.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSim.ForeColor = System.Drawing.Color.White;
-            this.btnSim.Location = new System.Drawing.Point(0, 458);
+            this.btnSim.Location = new System.Drawing.Point(0, 299);
             this.btnSim.Name = "btnSim";
             this.btnSim.ShadowDecoration.BorderRadius = 12;
             this.btnSim.ShadowDecoration.Depth = 20;
@@ -231,7 +233,7 @@
             this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(112, 458);
+            this.btnCancelar.Location = new System.Drawing.Point(116, 299);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.ShadowDecoration.BorderRadius = 12;
             this.btnCancelar.ShadowDecoration.Depth = 20;
@@ -244,12 +246,12 @@
             this.btnCancelar.MouseEnter += new System.EventHandler(this.btn_Enter);
             this.btnCancelar.MouseLeave += new System.EventHandler(this.btn_Leave);
             // 
-            // box
+            // MensagemBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.ClientSize = new System.Drawing.Size(459, 524);
+            this.ClientSize = new System.Drawing.Size(459, 369);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSim);
             this.Controls.Add(this.btnNao);
@@ -260,7 +262,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "box";
+            this.Name = "MensagemBox";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menssagebox";

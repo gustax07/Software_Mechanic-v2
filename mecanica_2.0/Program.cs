@@ -16,7 +16,8 @@ namespace mecanica_2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login1());
+            
+            Application.Run(new includes.FormModal("Informacoes", 1, 1));
         }
     }
 }

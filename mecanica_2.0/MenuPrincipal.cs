@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,24 +47,15 @@ namespace mecanica_2._0
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            Login l = new Login();
+            l.Show();
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+            guna2AnimateWindow1.AnimationType = Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
         }
     }
 }
 
-/** codigos de cores
- * 
- * azul: 
- * #293644
- * #435568
- * #1A2A3B
- * #0E1D2C
- * #04101B
- * 
- * Verde: 
- * #021C14
- * #0C2D22
- * #28453C
- * #416A5D
- * #183C30
- */

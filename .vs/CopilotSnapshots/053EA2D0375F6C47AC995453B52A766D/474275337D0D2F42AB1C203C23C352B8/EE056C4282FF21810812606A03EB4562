@@ -9,21 +9,19 @@ namespace mecanica_2._0.Classes
 {
     public class StatusServidor
     {
-        public async static Task<bool> VerificarConexao()
+        public async static Task<bool>  VerificarConexao()
         {
             try
             {
                 Banco conexaoBD = new Banco();
-                MySqlConnection con = await conexaoBD.ObterConexao();  
-
-                if (con != null && con.State == System.Data.ConnectionState.Open)
+                MySqlConnection con = conexaoBD.ObterConexao();
+                MySqlConnection conexao = new MySqlConnection(con.ConnectionString);
                 {
-                    con.Close();
+                    conexao.Open();
                     return true;
                 }
-                return false;
             }
-            catch (Exception)
+            catch (MySqlException)
             {
                 return false;
             }

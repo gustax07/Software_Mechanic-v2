@@ -20,33 +20,75 @@ namespace mecanica_2._0.Classes
         public int id_status_contrato_fk { get; set; }
         public int id_setor_fk { get; set; }
 
-        public DataTable ListarPorID()
+        public async Task<DataTable> ListarPorID()
         {
             string comando = "SELECT * FROM contrato_usuarios WHERE id = @id";
             Banco conexaoBD = new Banco();
-            MySqlConnection con = conexaoBD.ObterConexao();
-      
+            MySqlConnection con = await conexaoBD.ObterConexao();
+
             MySqlCommand cmd = new MySqlCommand(comando, con);
             cmd.Parameters.AddWithValue("@id", Id);
             cmd.Prepare();
             DataTable tabela = new DataTable();
 
-            tabela.Load(cmd.ExecuteReader());
+            tabela.Load(await cmd.ExecuteReaderAsync());
             conexaoBD.Desconectar(con);
             return tabela;
         }
-        public DataTable ListarComInnerJoin()
+        public async Task<DataTable> Listar()
         {
-            string comando = "SELECT contrato_usuarios.id, contrato_usuarios.data_contratado, contrato_usuarios.data_expiracao, contrato_usuarios.salario, carga_horaria.carga, tipo_contrato.tipo, status_contrato.nome, setor.nome\r\nFROM contrato_usuarios\r\nINNER JOIN carga_horaria ON id_carga_horaria_fk = carga_horaria.id\r\nINNER JOIN tipo_contrato ON id_tipo_contrato_fk = tipo_contrato.id\r\nINNER JOIN status_contrato ON id_status_contrato_fk = status_contrato.id\r\nINNER JOIN setor ON id_setor_fk = setor.id\r\nWHERE contrato_usuarios.id = 1;";
+            string comando = "SELECT * FROM contrato_usuarios";
             Banco conexaoBD = new Banco();
-            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlConnection con = await conexaoBD.ObterConexao();
 
             MySqlCommand cmd = new MySqlCommand(comando, con);
             cmd.Parameters.AddWithValue("@id", Id);
             cmd.Prepare();
             DataTable tabela = new DataTable();
 
-            tabela.Load(cmd.ExecuteReader());
+            tabela.Load(await cmd.ExecuteReaderAsync());
+            conexaoBD.Desconectar(con);
+            return tabela;
+        }
+        public async Task<DataTable> ListarComInnerJoinID()
+        {
+            string comando = "SELECT contrato_usuarios.id, contrato_usuarios.data_contratado, contrato_usuarios.data_expiracao, contrato_usuarios.salario, carga_horaria.carga, tipo_contrato.tipo, status_contrato.nome, setor.nome\r\nFROM contrato_usuarios\r\nINNER JOIN carga_horaria ON id_carga_horaria_fk = carga_horaria.id\r\nINNER JOIN tipo_contrato ON id_tipo_contrato_fk = tipo_contrato.id\r\nINNER JOIN status_contrato ON id_status_contrato_fk = status_contrato.id\r\nINNER JOIN setor ON id_setor_fk = setor.id\r\nWHERE contrato_usuarios.id = 1;";
+            Banco conexaoBD = new Banco();
+            MySqlConnection con = await conexaoBD.ObterConexao();
+
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Parameters.AddWithValue("@id", Id);
+            cmd.Prepare();
+            DataTable tabela = new DataTable();
+
+            tabela.Load(await cmd.ExecuteReaderAsync());
+            conexaoBD.Desconectar(con);
+            return tabela;
+        }
+
+        public async Task<DataTable> ListarComInnerJoin()
+        {
+            string comando = "SELECT \r\n    c.id,\r\n    " +
+                "c.salario,\r\n    " +
+                "c.data_contratado,\r\n    " +
+                "c.data_expiracao,\r\n    " +
+                "cc.carga AS carga_horaria,\r\n    " +
+                "tc.tipo AS tipo_contrato,\r\n    " +
+                "s.nome AS setor,\r\n    " +
+                "st.nome AS status\r\n" +
+                "FROM contrato_usuarios c\r\n" +
+                "JOIN tipo_contrato tc ON tc.id = c.id_tipo_contrato_fk\r\n" +
+                "JOIN setor s ON s.id = c.id_setor_fk\r\n" +
+                "JOIN carga_horaria cc ON cc.id = c.id_carga_horaria_fk\r\n" +
+                "JOIN status_contrato st ON st.id = c.id_status_contrato_fk;";
+
+            Banco conexaoBD = new Banco();
+            MySqlConnection con = await conexaoBD.ObterConexao();
+            MySqlCommand cmd = new MySqlCommand(comando, con);
+            cmd.Parameters.AddWithValue("@id", Id);
+            cmd.Prepare();
+            DataTable tabela = new DataTable();
+            tabela.Load(await cmd.ExecuteReaderAsync());
             conexaoBD.Desconectar(con);
             return tabela;
         }

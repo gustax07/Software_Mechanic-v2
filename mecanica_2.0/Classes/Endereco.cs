@@ -20,18 +20,18 @@ namespace mecanica_2._0.Classes
         public string complemento { get; set; }
         public int Id_usuario_fk { get; set; }
 
-        public DataTable ListarPorID()
+        public async Task<DataTable> ListarPorID()
         {
             string comando = "SELECT * FROM endereco WHERE id_usuario_fk = @id";
             Banco conexaoBD = new Banco();
-            MySqlConnection con = conexaoBD.ObterConexao();
+            MySqlConnection con = await conexaoBD.ObterConexao();
 
             MySqlCommand cmd = new MySqlCommand(comando, con);
             cmd.Parameters.AddWithValue("@id", Id_usuario_fk);
             cmd.Prepare();
             DataTable tabela = new DataTable();
 
-            tabela.Load(cmd.ExecuteReader());
+            tabela.Load(await cmd.ExecuteReaderAsync());
             conexaoBD.Desconectar(con);
             return tabela;
         }
